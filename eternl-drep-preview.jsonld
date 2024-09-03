@@ -1,0 +1,74 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP100:IdentityReference",
+            "Link": "CIP100:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "Eternl",
+    "motivations": "We want to help Cardano move into the right direction.",
+    "objectives": "The Eternl DRep brings technical expertise to the table. ",
+    "paymentAddress": "addr_test1qzeguj5u6qecnpp635xhn7n2z9e6l5e9fk3pnm6s094qltjewf049js5f44dtmav2wxm7cerjxg4afkq649wvmawwj8s8lfdvp",
+    "qualifications": "The Eternl wallet project consists of dedicated members of the Cardano community who have a deep understanding of the technical aspects of Cardano.\n\nWe help run this blockchain by operating stake pools, providing tools for SPOs and developing a feature-rich wallet that anyone can use.",
+    "references": [
+      {
+        "@type": "Other",
+        "label": "Label",
+        "uri": "https://eternl.io"
+      },
+      {
+        "@type": "Other",
+        "label": "Label",
+        "uri": "https://x.com/eternlwallet"
+      }
+    ]
+  }
+}
