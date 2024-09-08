@@ -83,6 +83,11 @@
     "givenName": {
       "@value": "Eternl DRep Committee"
     },
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://ipfs.io/ipfs/QmTWA68yCu75fvXEJYgRuLtudhupeuDp77AAR3tuYESaXM",
+      "sha256": "35aab795ecd1222d3d75494fa95d5e6ff6a4d68693daed39843d5c0278d631a2"
+    },
     "motivations": {
       "@value": "Our motivation to register as a DRep stems from a deep commitment to the Cardano ecosystem and a desire to play an active role in its evolution, ensuring its growth aligns with the principles of decentralization, security, and community empowerment."
     },
