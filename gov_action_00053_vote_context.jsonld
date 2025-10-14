@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "TL;DR: EDC voted ABSTAIN on gov_action1n9hdlcmshrj3hee4g8n4fxdgrprpxp0r03l6psd3j0evtpck0nrsqm57age;\n\nThis document has a whole lot of repetition, to put it nicely.\n\nSome takeaways:\n\nImplement an Active, Managed Treasury:\nThis section depends heavily on trust in whoever manages those funds — not entirely convinced about that part.\n\nCapital Efficiency:\n“Narrow focus to accelerate development and learning; pivot quickly if initial approaches are ineffective.”\n“Pivot quickly” isn’t really possible with the current treasury system.\n\nAnnual L1 Revenue / Daily Meaningful Transactions:\nKPIs like these depend on external market conditions. As seen in 2025, transaction volume decreased significantly. In a four-year market cycle, these metrics can fluctuate dramatically.\n\nOverall, there are some nice-to-haves in here, but I’m not sure we need more of these lengthy documents for hundreds of people to spend time reading."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
