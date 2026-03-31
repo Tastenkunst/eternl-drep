@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "TL;DR: EDC votes YES on gov_action17dfgtkeufcy945e3ssanqpmn09ft3gezhvepvvg7msmlmaz260dqqjtsmpe;\n\nWe revised our vote on Dingo from NO to YES. Going forward, for node diversity, we will support the Haskell, Rust, Go, and TypeScript implementations.\n\nReasoning: If we introduce more than one node implementation, we need to add more than one additional implementation. Think of different node implementations as a multi-signature wallet controlled by two parties that do not trust each other. If one of the nodes introduces bugs or changes the ledger rules, whether intentionally or not, we do not want a 50/50 chain split. We want at least two honest and correct node implementations to prevent a situation similar to the one we had in November 2025.\n\nWe expect the maintenance cost to be significantly lower than the cost of implementing the different nodes now. Spend responsibly.\n\nTL;DR: If you support node diversity, you need to choose at least two additional node implementations in addition to the Haskell one."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
